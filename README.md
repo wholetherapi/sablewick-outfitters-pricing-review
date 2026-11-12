@@ -1,21 +1,25 @@
-# Fernhollow Outfitters — Pricing Review
+# Sablewick Outfitters — Pricing Review
 
 Quarterly price-audit workspace maintained by the category pricing team.
 
 ## Repository layout
 
-- `templates/shortlist-template.json` — blank record template
-- `reports/` — one folder per quarter, e.g. `reports/2026-Q3/shortlist.json`
+- `templates/shortlist-template.json` — blank record template (one element)
+- `reports/<year>-<quarter>/shortlist.json` — published quarterly shortlists
+- `README.md` — format and conventions
 
 ## Publishing a quarter
 
-Create or update `reports/<year>-<quarter>/shortlist.json` on the audit branch for that quarter.
+Add `reports/<year>-<quarter>/shortlist.json` on the audit branch for that
+quarter (for example, the Q4 2026 shortlist is committed to
+`reports/2026-Q4/shortlist.json` on `q4-audit`).
 
 ### Shortlist Record Schema
 
-Every shortlist is a JSON array. Each element is an object with exactly these five keys:
+Each shortlist file is a JSON array. Every element is an object with exactly
+these five keys:
 
-| key | type | meaning |
+| key | type | notes |
 | --- | --- | --- |
 | `item_code` | string | catalog SKU of the product |
 | `canonical_url` | string | absolute URL of the product page |
@@ -23,4 +27,9 @@ Every shortlist is a JSON array. Each element is an object with exactly these fi
 | `featured_price` | string | current featured-offer price, two decimal places, no currency symbol |
 | `offer_seller` | string | seller shown in the featured offer |
 
-Do not add extra keys. Prices are decimal strings (`"54.00"`), not numbers.
+Write one element per audited item. Do not add extra keys. Prices are decimal
+strings (`"54.00"`), not numbers.
+
+## Quarterly shortlists
+
+- `reports/2026-Q3/shortlist.json` — Camp Lighting shortlist (published)

@@ -1,0 +1,23 @@
+[
+  {
+    "item_code": "SW-CL-3591",
+    "canonical_url": "https://shop.sablewick.example/p/beacon-camp-lantern-SW-CL-3591",
+    "display_name": "Beacon Camp Lantern",
+    "featured_price": "38.00",
+    "offer_seller": "Sablewick Direct"
+  },
+  {
+    "item_code": "SW-CL-3592",
+    "canonical_url": "https://shop.sablewick.example/p/halo-reading-light-SW-CL-3592",
+    "display_name": "Halo Reading Light",
+    "featured_price": "21.50",
+    "offer_seller": "Northbank Homewares"
+  },
+  {
+    "item_code": "SW-CL-3593",
+    "canonical_url": "https://shop.sablewick.example/p/dusk-camp-lantern-SW-CL-3593",
+    "display_name": "Dusk Camp Lantern",
+    "featured_price": "46.00",
+    "offer_seller": "Trailhead Provisions"
+  }
+]
